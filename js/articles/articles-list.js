@@ -555,7 +555,7 @@ async function generateWithAI(articlesData) {
         }
     }
     
-    const prompt = `Създай професионална българска заглавна страница на училищен вестник "Гласът на коридора" 
+    const prompt = `Създай професионална българска заглавна страница на училищен вестник "CampusHub" 
     базирана на следните ПЪЛНИ статии. Включи снимки ако има такива. Използвай тона на младежки вестник, бъди креативен и вдъхновяващ. Използвай готов Canva template за улеснение.
 
 ПЪЛНИ СТАТИИ ЗА ВКЛЮЧВАНЕ:
@@ -687,7 +687,7 @@ function generateBasicNewspaper(articlesData) {
         <div class="newspaper-container">
             <!-- Newspaper Header -->
             <header class="newspaper-header">
-                <h1 class="newspaper-title">📰 Гласът на коридора</h1>
+                <h1 class="newspaper-title">📰 CampusHub</h1>
                 <div class="newspaper-subtitle">
                     <span class="edition-info">Специално издание</span>
                     <span class="newspaper-date">${today}</span>
@@ -747,7 +747,7 @@ function generateBasicNewspaper(articlesData) {
             <footer class="newspaper-footer">
                 <div class="footer-content">
                     <div class="footer-info">
-                        <h3>Гласът на коридора</h3>
+                        <h3>CampusHub</h3>
                         <p>Училищен клуб по журналистика</p>
                         <p>Това издание е генерирано автоматично от избрани статии</p>
                     </div>
@@ -758,9 +758,7 @@ function generateBasicNewspaper(articlesData) {
                         <p>Автори: ${[...new Set(fullArticles.map(a => a.author))].length}</p>
                     </div>
                 </div>
-                <div class="footer-copyright">
-                    <p>&copy; ${new Date().getFullYear()} Клуб "Млад Журналист". Всички права запазени.</p>
-                </div>
+
             </footer>
         </div>
     `;
@@ -827,7 +825,7 @@ function downloadNewspaper() {
         <!DOCTYPE html>
         <html>
         <head>
-            <title>Гласът на коридора - ${today}</title>
+            <title>CampusHub - ${today}</title>
             <style>
                 body { font-family: 'Times New Roman', serif; padding: 40px; }
                 .newspaper-frontpage { max-width: 800px; margin: 0 auto; }
